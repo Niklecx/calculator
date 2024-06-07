@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> Intro to Javascript </title>
+		<script>
+				function add2numbers()
+				{
+					var num1=document.getElementById ("fnum1").value * 1.0;
+					var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML = num1 + num2;
+				}
+				function average()
+				{
+					var num1=document.getElementById ("fnum1").value * 1.0;
+					var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML = (num1 + num2)/2.0;
+				}
+				function multiply()
+				{
+					var num1=document.getElementById ("fnum1").value * 1.0;
+					var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML = num1 * num2;
+				}
+				function divide()
+				{
+					var num1=document.getElementById ("fnum1").value * 1.0;
+					var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML = num1 / num2;
+				}
+				function topower()
+				{
+					var num1=document.getElementById ("fnum1").value * 1.0;
+					var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML = Math.pow(num1, num2);
+				}
+		</script>
+	</head>
+<body>
+		<h1 id="myheading">
+			We are going to calculate
+		</h1>
+	<p>
+		<form>
+			<label for="fnum1">Erste Zahl:</label>
+			<input type="text" id="fnum1" name="fnum1"><br><br>
+			<label for="fnum2">Zweite Zahl:</label>
+			<input type="text" id="fnum2" name="fnum2"><br><br>
+		</form>
+	</p>		
+		<button onclick="add2numbers()">
+				sum
+		</button>
+		<button onclick="average()">
+				average
+		</button>
+		<button onclick="multiply()">
+				product
+		</button>
+		<button onclick="divide()">
+				quotient
+		</button>
+		<button onclick="topower()">
+				topower
+		</button>
+		<p id="result" >
+		</p>
+	</body>
+</html>
